@@ -1,9 +1,10 @@
 /* ==UserStyle==
 @name           DarkL
 @namespace      deepl.com
-@version        0.1.0
+@version        0.1.1
 @description    A Dark theme for deepL.com
 @author         Noya
+@updateURL      https://github.com/ZykeDev/DarkL/raw/main/darkl.user.css
 ==/UserStyle== */
 
 @-moz-document domain("deepl.com")
