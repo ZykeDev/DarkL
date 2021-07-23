@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkL
 @namespace      deepl.com
-@version        0.1.1
+@version        0.1.2
 @description    A Dark theme for deepL.com
 @author         Noya
 @updateURL      https://github.com/ZykeDev/DarkL/raw/main/darkl.user.css
@@ -47,7 +47,7 @@
     {
         background: var(--color-darker) !important;
         color: var(--color-light) !important;
-        border-color: var(--color-darkest) !important;
+        border-color: var(--color-darker) !important;
     }
     
         
@@ -66,12 +66,26 @@
     .dl_top_element *,
     .dl_top_element--wide *,
     .dl_header *,
-    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch
+    .integratedLanguageSelectors .lmt--web .lmt__sides_container .lmt__side_container--target .lmt__language_container_switch,
+	.lmt__textarea_separator, .lmt__textarea_separator__vertical_line
     {
-        background: var(--color-darker);
+        background: var(--color-darker) !important;
     }
+	
+	.lmt__docTrans-tab-container,
+	.switch_module_switch__559c384a,
+	.switch_module_size_medium__559c384a
+	{
+		background: rgba(0, 0, 0, 0);
+	}
+	
+	.lmt__language_select__menu {
+		color: var(--color-light) !important;
+	}
+	
     
-    .lmt__translations_as_text__item *
+    .lmt__translations_as_text__item *,
+	.lmt__language_select__menu *
     {
         color: var(--color-light) !important;
     }
@@ -85,6 +99,10 @@
     button strong {
         color: var(--color-accent-light) !important;
     }
+	
+	.lmt__language_select__menu button:hover {
+		background-color: var(--color-dark) !important;
+	}
     
     textarea
     {
